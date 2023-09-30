@@ -1,0 +1,107 @@
+.card {
+    position: relative;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffd981;
+    height: fit-content;
+    margin: 20px;
+    max-width: 100%;
+}
+.confirmed {
+    text-decoration: line-through;
+    color: grey;
+}
+.card h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+.card p {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.purple {
+    background-color: #826aed;
+}
+.aqua {
+    background-color: #b2f7ef;
+}
+.pink {
+    background-color: #ff7aa2;
+}
+.green {
+    background-color: #baf2bb;
+}
+.charts {
+    display: flex;
+    align-items: center;
+}
+.charts .circle {
+    margin: 10px;
+}
+.confirm {
+    display: flex;
+    align-items: center;
+}
+.confirm input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.confirm label {
+    font-weight: 900;
+}
+.menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.menu ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    list-style: none;
+    transition: .5s;
+}
+.menu:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+.menu ul li {
+    width: 100%;
+}
+.menu ul li button {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    padding-right: 50px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+.menu ul li button:hover {
+     background-color: #ced4da;
+     transform: scale(1);
+}
+@media screen and (max-width:474px) {
+    .card {
+        margin: 20px auto !important;
+        width: 90%;
+    }
+}

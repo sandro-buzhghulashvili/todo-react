@@ -1,0 +1,61 @@
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.input-group label{
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+.input-group input {
+    padding: 5px 20px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid black;
+    font-size: 1.1rem;
+    transition: .5s;
+    background-color: transparent;
+}
+.input-group input:focus {
+    outline: none;
+    border-bottom: 2px solid #a2d2ff;
+}
+.textarea {
+    background-color: transparent !important;
+}
+.chart {
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.chart:hover {
+    border: 2px solid black;
+}
+.chosen {
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.charts {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.buttons {
+    display: flex;
+}
+@media screen and (max-width:768px) {
+    .chart:hover {
+        border: none;
+    }
+}

@@ -1,0 +1,109 @@
+.sidebar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar .filter-bar {
+    position: relative;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar .filter-bar .circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.sidebar .filter-bar p {
+    margin-left: 10px;
+}
+.purple {
+    background-color: #826aed;
+}
+.aqua {
+    background-color: #b2f7ef;
+}
+.pink {
+    background-color: #ff7aa2;
+}
+.green {
+    background-color: #baf2bb;
+}
+.hide-done-tasks {
+    display: none;
+}
+.illustration {
+    display: none;
+}
+@media(min-width:768px) {
+    .sidebar {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0px !important;
+        padding-left: 60px !important;
+    }
+    .sidebar .filter-bar {
+        margin: 20px 0 !important;
+    }
+    .hide-done-tasks {
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .hide-done-tasks input[type="checkbox"]{
+        width: 20px;
+        height: 20px;
+    }
+    .hide-done-tasks label {
+        margin-left: 10px;
+    }
+    .illustration {
+        display: block;
+        margin-top: 100px;
+    }
+    .illustration img {
+        width: 100%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .sidebar {
+        width: 15%;
+    }
+}
+@media(min-width:578px) {
+    .sidebar .filter-bar .circle {
+        width: 30px;
+        height: 30px;
+    }
+    .sidebar .filter-bar {
+        margin: 10px 20px;
+    }
+}
+@media(min-width:700px) {
+    .sidebar .filter-bar {
+        margin: 10px 30px;
+    }
+}
+.chosen-filter {
+    transition: 0.7s;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+    bottom: -10px;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+}
+.chosen-filter.visible {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
